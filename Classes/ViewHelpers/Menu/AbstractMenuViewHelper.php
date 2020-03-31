@@ -625,9 +625,9 @@ abstract class AbstractMenuViewHelper extends AbstractTagBasedViewHelper
     }
 
     /**
-     * @return array
+     * @return \TYPO3Fluid\Fluid\Component\Argument\ArgumentCollection
      */
-    public function getArguments()
+    public function getArguments() : \TYPO3Fluid\Fluid\Component\Argument\ArgumentCollection
     {
         if (false === is_array($this->arguments)) {
             return $this->arguments->toArray();
